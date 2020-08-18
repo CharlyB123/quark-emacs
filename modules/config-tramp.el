@@ -23,6 +23,7 @@
 
 (with-eval-after-load 'tramp
   (eval-when-compile (require 'tramp))
+  (setq tramp-completion-use-auth-sources nil)
   ;; Define a rsyncx method analogous to scpx
   (add-to-list 'tramp-methods
                `("rsyncx"
